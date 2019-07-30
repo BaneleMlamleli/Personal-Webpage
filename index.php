@@ -35,6 +35,7 @@ if(isset($_POST["submit"])){
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="https://banelemlamleli.blogspot.com/" target="_blank">Blog</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -42,7 +43,7 @@ if(isset($_POST["submit"])){
                     <li><a href="https://github.com/BaneleMlamleli" class="github fa fa-github" target="_blank"></a></li>
                     <li><a href="https://www.linkedin.com/in/banele-mlamleli/" class="linkedin fa fa-linkedin" target="_blank"></a></li>
                     <li><a href="https://join.skype.com/invite/n6NORKMGkgpG" class="skype fa fa-skype" target="_blank"></a></li>
-                    <li><a href="...blogger..." class="blogger fa fa-blogger" target="_blank"></a></li>
+<!--                    <li><a href="https://banelemlamleli.blogspot.com/" class="blogger fab fa-blogger" target="_blank"></a></li>-->
                 </ul>
             </div>
             <div class="menu-toggle">

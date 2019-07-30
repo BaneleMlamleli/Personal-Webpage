@@ -5,7 +5,7 @@ html{
 }
 
 .jumbotron{
-    background-image: url(./assets/tech.jpg);
+    background-image: url(./assets/wp2222507.jpg);
     background-size: cover;
     height: 70vh;
 }
@@ -66,7 +66,7 @@ header .skype:hover{
 }
 
 header .blogger:hover{
-    background: #f0a851;
+    background: #fb8f3d;
     color: white;
 }
 
