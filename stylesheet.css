@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+.jumbotron{
+    background-image: url(./assets/tech.jpg);
+    background-size: cover;
+    height: 70vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;;
+}
+
+header{
+    /*position: absolute;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .social-media{
+    float: left;
+    font-size: 28px;
+}
+
+header .social-media ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header .social-media ul li{
+    list-style: none;
+}
+
+header .social-media ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header .github:hover{
+    background: #333;
+    color: white;
+}
+
+header .linkedin:hover{
+    background: #007bb5;
+    color: white;
+}
+
+header .skype:hover{
+    background: #00aff0;
+    color: white;
+}
+
+header .blogger:hover{
+    background: #f0a851;
+    color: white;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active{
+    color: white;
+    font-weight: bolder;
+    background: #007bb5;
+}
+
+.menu-toggle{
+    color: #007bb5;
+    float: right;
+    line-height: 50px;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 991px) {
+    header{
+        padding: 0 20px;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    header nav{
+        position: absolute;
+        width: 100%;
+        height: 40vh;
+        background: #333;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    header nav.active{
+        left: 0;
+    }
+
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li a{
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+}
+
+section{
+    width: 100%;
+    height: 500px;
+    float: left;
+}
+
+.section-header-text{
+    padding-top: 20px;
+    text-align: center;
+}
+
+#about_me{
+    background: white;
+}
+
+#skills{
+    background: #c9f3f5;
+}
+
+#projects{
+    background: #f5e3d2;
+}
+
+#contacts{
+    background: #e7fff8;
+}
+
+.display-5 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+    color: #fff;
+    text-shadow: 0 0 20px #ff005b;
+}
+
+.p1 {
+    text-align: center;
+    padding: 0 20px;
+    font-size: x-large;
+    color: #fff;
+    text-shadow: 0 0 20px #ff005b;
+ }
+
+.p2 {
+    text-align: center;
+    padding: 0 20px;
+    font-size: x-large;
+    color: #fff;
+    text-shadow: 0 0 20px #ff005b;
+}
+
+/*Back to the top button*/
+#myBtn {
+    display: none;
+    font-weight: bolder;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #00aff0;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #e7413b;
+}
+
+#myBtn:hover {
+    background-color: #e7413b;
+}
+
+/*Let's have a chat section*/
+.main-contacts-div{
+    display: flow;
+    align-content: center;
+}
+
+.form-div{
+    float: left;
+    width: 70%;
+    padding-left: 10%;
+    padding-top: 30px;
+}
+
+.contacts-div{
+    float: right;
+    width: 30%;
+    padding-left: 5%;
+    padding-top: 60px;
+}
+
+
+/*.card-body{*/
+    /*background: #e7fff8;*/
+    /*-moz-box-shadow:    6px 6px 10px 0px #ccc;*/
+    /*-webkit-box-shadow: 6px 6px 10px 0px #ccc;*/
+    /*box-shadow:         6px 6px 10px 0px #ccc;*/
+/*}*/
