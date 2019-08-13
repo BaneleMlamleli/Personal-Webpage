@@ -19,7 +19,7 @@ if(isset($_POST["submit"])){
         <link rel="icon" type="image/ico" href="./assets/banele.jpg" />
         <link rel="stylesheet" type="text/css" href="./stylesheet.css">
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/fontawesome-free-5.10.1-web/css/all.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script type="text/javascript" src="./script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -40,14 +40,14 @@ if(isset($_POST["submit"])){
             </nav>
             <div class="social-media">
                 <ul>
-                    <li><a href="https://github.com/BaneleMlamleli" class="github fa fa-github" target="_blank"></a></li>
-                    <li><a href="https://www.linkedin.com/in/banele-mlamleli/" class="linkedin fa fa-linkedin" target="_blank"></a></li>
-                    <li><a href="https://join.skype.com/invite/n6NORKMGkgpG" class="skype fa fa-skype" target="_blank"></a></li>
-<!--                    <li><a href="https://banelemlamleli.blogspot.com/" class="blogger fab fa-blogger" target="_blank"></a></li>-->
+                    <li><a href="https://github.com/BaneleMlamleli" class="github fab fa-github" target="_blank"></a></li>
+                    <li><a href="https://www.linkedin.com/in/banele-mlamleli/" class="linkedin fab fa-linkedin" target="_blank"></a></li>
+                    <li><a href="https://join.skype.com/invite/n6NORKMGkgpG" class="skype fab fa-skype" target="_blank"></a></li>
+                    <li><a href="https://banelemlamleli.blogspot.com/" class="blogger fab fa-blogger-b" target="_blank"></a></li>
                 </ul>
             </div>
             <div class="menu-toggle">
-                <i class="fa fa-bars" aria-hidden="true"></i>
+                <i class="fab fa-bars" aria-hidden="true"></i>
             </div>
         </header>
         <!-- Listen for the menu-toggle bar event then display or hide the responsive navigation bar -->
@@ -63,8 +63,8 @@ if(isset($_POST["submit"])){
             <div class="container">
                 <div style="text-align: center; padding-top: 10%;">
                     <h1 class="display-5" data-text="Hi, I'm Banele Mlamleli">Hi, I'm Banele Mlamleli</h1>
-                    <p class="p1">I am an avid programmer who just loves playing around with code.</p>
-                    <p class="p2">I want to make things that make a difference.</p>
+                    <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="p2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
         </div>
@@ -109,7 +109,7 @@ if(isset($_POST["submit"])){
                             <label for="comment">Comment</label>
                             <textarea class="form-control" id="comment" name="comment" rows="3" placeholder="comment" ></textarea>
                         </div>
-                        <button type="submit" name="submit" onclick="return formValidation()" class="btn btn-primary btn-lg btn-block" style="font-size:24px;"><i class="fa fa-send-o"></i>&nbspSend</button>
+                        <button type="submit" name="submit" onclick="return formValidation()" class="btn btn-primary btn-lg btn-block" style="font-size:24px;"><i class="fa fa-mail-bulk"></i>&nbspSend</button>
                     </form>
                 </div>
                 <div class="contacts-div">
