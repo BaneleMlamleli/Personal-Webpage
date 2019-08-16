@@ -49,6 +49,8 @@ if(isset($_POST["submit"])){
                 <i class="fab fa-bars" aria-hidden="true"></i>
             </div>
         </header>
+        <!-- Error alert message div-->
+        <div id="alert_message"></div>
         <!-- Listen for the menu-toggle bar event then display or hide the responsive navigation bar -->
         <script>
             $(document).ready(function () {

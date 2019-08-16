@@ -235,3 +235,17 @@ section{
     padding-left: 5%;
     padding-top: 60px;
 }
+
+/*Alert message styling*/
+#alert_message{
+    position: fixed;
+    left: 40%;
+    width: 400px;
+    padding: 20px;
+    background-color: #ffa29c;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 20px black;
+    display: none;
+}

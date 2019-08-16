@@ -26,22 +26,22 @@ function formValidation(){
 
     // removing spaces and checking if the field is empty
     if(name.value.trim() == ""){
-        alert("Name field cannot be left empty!");
+        customAlertErrorMessage("Name field cannot be left empty!");
         return false;
     }
 
     if(surname.value.trim() == ""){
-        alert("Surname field cannot be left empty!");
+        customAlertErrorMessage("Surname field cannot be left empty!");
         return false;
     }
 
     if(email.value.trim() == ""){
-        alert("Email field cannot be left empty!");
+        customAlertErrorMessage("Email field cannot be left empty!");
         return false;
     }
 
     if(comment.value.trim() == ""){
-        alert("Comment field is empty!");
+        customAlertErrorMessage("Comment field is empty!");
         return false;
     }
 
@@ -50,17 +50,26 @@ function formValidation(){
         if(surname.value.match(alphaExp)){
             //if(email.value.match(emailRegex))
             if(emailRegex.test(email.value)) {
+                alert("All working");
                 return true;
             }else{
-                alert("Incorrect email address");
+                customAlertErrorMessage("Incorrect email address");
                 return false;
             }
         }else{
-            alert("Surname cannot contain numbers or special characters");
+            customAlertErrorMessage("Surname cannot contain numbers or special characters");
             return false;
         }
     }else{
-        alert("Name cannot contain numbers or special characters");
+        customAlertErrorMessage("Name cannot contain numbers or special characters");
         return false;
     }
+}
+
+function customAlertErrorMessage(errorValue){
+    document.getElementById("alert_message").innerHTML = errorValue;
+    document.getElementById("alert_message").style.display = "block";
+    setTimeout(function(){
+        document.getElementById("alert_message").style.display = "none";
+    }, 2000);
 }
