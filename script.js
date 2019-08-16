@@ -20,31 +20,47 @@ function formValidation(){
     var surname = document.getElementById("surname");
     var email = document.getElementById("email");
     var comment = document.getElementById("comment");
-    var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    ///^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var alphaExp = /^[a-zA-Z]+$/;
 
     // removing spaces and checking if the field is empty
-    if(name.value.trim() != "" && surname.value.trim() != "" && email.value.trim() != "" && comment.value.trim() != ""){
-        //checking if the name or surname contains digits or special characters
-        if(name.value.match(alphaExp)){
-            if(surname.value.match(alphaExp)){
-                // email regex validation. Check email if it is correct
-                if(!surname.value.match(emailRegex)) {
-                    return true;
-                }else{
-                    alert("Incorrect email address");
-                    return false;
-                }
+    if(name.value.trim() == ""){
+        alert("Name field cannot be left empty!");
+        return false;
+    }
+
+    if(surname.value.trim() == ""){
+        alert("Surname field cannot be left empty!");
+        return false;
+    }
+
+    if(email.value.trim() == ""){
+        alert("Email field cannot be left empty!");
+        return false;
+    }
+
+    if(comment.value.trim() == ""){
+        alert("Comment field is empty!");
+        return false;
+    }
+
+    //checking if the name or surname contains digits or special characters
+    if(name.value.match(alphaExp)){
+        if(surname.value.match(alphaExp)){
+            //if(email.value.match(emailRegex))
+            if(emailRegex.test(email.value)) {
+                return true;
             }else{
-                alert("Surname cannot contain numbers or special characters");
+                alert("Incorrect email address");
                 return false;
             }
         }else{
-            alert("Name cannot contain numbers or special characters");
+            alert("Surname cannot contain numbers or special characters");
             return false;
         }
     }else{
-        alert("Field cannot be left empty!");
+        alert("Name cannot contain numbers or special characters");
         return false;
     }
 }

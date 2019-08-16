@@ -35,7 +35,6 @@ if(isset($_POST["submit"])){
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contacts">Contacts</a></li>
-                    <li><a href="https://banelemlamleli.blogspot.com/" target="_blank">Blog</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -103,7 +102,7 @@ if(isset($_POST["submit"])){
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" >
+                            <input type="text" class="form-control" id="email" name="email" >
                         </div>
                         <div class="form-group">
                             <label for="comment">Comment</label>
