@@ -71,9 +71,9 @@ if(isset($_POST["submit"])){
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div style="text-align: center; padding-top: 10%;">
-                    <h1 class="display-5" data-text="Hi, I'm Banele Mlamleli">Hi, I'm Banele Mlamleli</h1>
-                    <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p class="p2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h1 class="display-5" data-text="Hi, I'm Banele Mlamleli">Hi, I'm Banele</h1>
+                    <p class="p1">I am an avid programmer who simply loves spending hours tinkering with the code.</p>
+                    <p class="p2">I am currently based in the Mother City - Cape Town.</p>
                 </div>
             </div>
         </div>
