@@ -15,6 +15,14 @@ if(isset($_POST["submit"])){
         <title>Banele Mlamleli</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145850082-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-145850082-1');
+        </script>
         <!-- Show icon to be visible in the title bar of the brower -->
         <link rel="icon" type="image/ico" href="./assets/banele.jpg" />
         <link rel="stylesheet" type="text/css" href="./stylesheet.css">
@@ -91,7 +99,7 @@ if(isset($_POST["submit"])){
             <h3 class="section-header-text card-subtitle mb-2 text-muted">Send me a direct message</h3>
             <div class="main-contacts-div">
                 <div class="form-div">
-                    <form method="post">
+                    <form action="sendEmail.php" method="POST">
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="name">Name</label>
@@ -103,7 +111,7 @@ if(isset($_POST["submit"])){
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">Your E-mail Address</label>
                             <input type="text" class="form-control" id="email" name="email" >
                         </div>
                         <div class="form-group">
@@ -128,7 +136,9 @@ if(isset($_POST["submit"])){
             </div>
         </section>
         <footer class="page-footer font-small blue">
-            <div class="footer-copyright text-center py-3">© 2019 Copyright. Banele</div>
+            <div class="footer-copyright text-center py-3" style="background: black; color: white;">
+                © 2019 Copyright. Banele Mlamleli
+            </div>
         </footer>
     </body>
 </html>
