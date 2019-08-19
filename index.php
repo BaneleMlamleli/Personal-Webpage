@@ -54,7 +54,7 @@ if(isset($_POST["submit"])){
                 </ul>
             </div>
             <div class="menu-toggle">
-                <i class="fab fa-bars" aria-hidden="true"></i>
+                <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
         </header>
         <!-- Error alert message div-->
