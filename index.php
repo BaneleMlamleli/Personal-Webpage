@@ -67,6 +67,9 @@ if(isset($_POST["submit"])){
                 })
             })
         </script>
+        <!-- Back to top button -->
+        <button onclick="topFunction()" class="fa fa-arrow-up" id="btnGoToTop" title="Go to top"></button>
+        <!-- Section for all the information about you -->
         <!-- This is the Jumbotron below the navigation bar -->
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
@@ -77,25 +80,22 @@ if(isset($_POST["submit"])){
                 </div>
             </div>
         </div>
-        <!-- Back to top button -->
-        <button onclick="topFunction()" class="fa fa-arrow-up" id="myBtn" title="Go to top"></button>
-        <!-- Section for all the information about you -->
-        <section id="about_me">
+        <section class="about_me">
             <h3 class="section-header-text card-subtitle mb-2 text-muted">A bit about me</h3>
         </section>
 
         <!-- Section for all your skills -->
-        <section id="skills">
+        <section class="skills">
             <h3 class="section-header-text card-subtitle mb-2 text-muted">What skills do I have</h3>
         </section>
 
         <!-- Section for all the projects you have worked on -->
-        <section id="projects">
+        <section class="projects">
             <h3 class="section-header-text card-subtitle mb-2 text-muted">Projects I've worked on</h3>
         </section>
 
         <!-- Section for your contact details. -->
-        <section id="contacts">
+        <section class="contacts">
             <h3 class="section-header-text card-subtitle mb-2 text-muted">Send me a direct message</h3>
             <div class="main-contacts-div">
                 <div class="form-div">
@@ -116,7 +116,7 @@ if(isset($_POST["submit"])){
                         </div>
                         <div class="form-group">
                             <label for="comment">Comment</label>
-                            <textarea class="form-control" id="comment" name="comment" rows="3" placeholder="comment" ></textarea>
+                            <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
                         </div>
                         <button type="submit" name="submit" onclick="return formValidation()" class="btn btn-primary btn-lg btn-block" style="font-size:24px;"><i class="fa fa-mail-bulk"></i>&nbspSend</button>
                     </form>
@@ -126,19 +126,11 @@ if(isset($_POST["submit"])){
                     <h6 class="card-subtitle mb-2 text-muted">Junior Software Developer</h6>
                     <div>
                         <i class="fa fa-phone"></i>
-                        (+27) (0)78 856 3244
-                    </div>
-                    <div>
+                        (+27) (0)78 856 3244</br>
                         <i class="fa fa-envelope"></i>
                         mlamlelibanele@yahoo.com
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="page-footer font-small blue">
-            <div class="footer-copyright text-center py-3" style="background: black; color: white;">
-                © 2019 Copyright. Banele Mlamleli
-            </div>
-        </footer>
-    </body>
 </html>
