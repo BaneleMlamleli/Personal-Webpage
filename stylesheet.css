@@ -14,7 +14,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif, 'Chilanka', cursive;;;
-    background: #c9f3f5;
 }
 
 header{
@@ -161,19 +160,19 @@ section{
     background-color: #00aff0;
 }
 
-.about_me{
+#about_me{
     background: white;
 }
 
-.skills{
+#skills{
     background: #c9f3f5;
 }
 
-.projects{
+#projects{
     background: #f5e3d2;
 }
 
-.contacts{
+#contacts{
     background: #e7fff8;
 }
 

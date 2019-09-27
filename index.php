@@ -80,22 +80,22 @@ if(isset($_POST["submit"])){
                 </div>
             </div>
         </div>
-        <section class="about_me">
+        <section id="about_me">
             <h3 class="section-header-text card-subtitle mb-2 text-muted">A bit about me</h3>
         </section>
 
         <!-- Section for all your skills -->
-        <section class="skills">
+        <section id="skills">
             <h3 class="section-header-text card-subtitle mb-2 text-muted">What skills do I have</h3>
         </section>
 
         <!-- Section for all the projects you have worked on -->
-        <section class="projects">
+        <section id="projects">
             <h3 class="section-header-text card-subtitle mb-2 text-muted">Projects I've worked on</h3>
         </section>
 
         <!-- Section for your contact details. -->
-        <section class="contacts">
+        <section id="contacts">
             <h3 class="section-header-text card-subtitle mb-2 text-muted">Send me a direct message</h3>
             <div class="main-contacts-div">
                 <div class="form-div">
